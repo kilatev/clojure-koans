@@ -20,11 +20,13 @@
   ))
 
 (defn factorial [n]
-  (if (= 0 n)
-    1
-    (* n (factorial (- n 1)))
-    )
-  )
+  (loop [n  n
+        acc 1]
+    (if (= 0 n)
+      acc
+      (recur (dec n) (* n acc))
+  ))
+)
 
 (meditations
   "Recursion ends with a base case"
