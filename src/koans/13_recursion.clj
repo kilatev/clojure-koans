@@ -24,9 +24,7 @@
         acc 1]
     (if (= 0 n)
       acc
-      (recur (dec n) (* n acc))
-  ))
-)
+      (recur (dec n) (* n acc)))))
 
 (meditations
   "Recursion ends with a base case"
