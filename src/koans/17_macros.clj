@@ -27,7 +27,7 @@
 
 (meditations
   "Macros are like functions created at compile time"
-  (= __ (hello "Macros!"))
+  (= "Hello, Macros!" (hello "Macros!"))
 
   "I can haz infix?"
   (= __ (infix (9 + 1)))
